@@ -1,63 +1,47 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
-
 <p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+        <a href="#" target="_blank">
+        <img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400">
+    </a>
 </p>
 
-## About Laravel
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+# PROYECTO LARAVEL BOOTCAMP v1
+El proyecto es realizado el mes de Agosto de 2021 durante el Boocamp Laravel v1 The PHP Framework for Web Artisans
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
-
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
-
-## Learning Laravel
-
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
-
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[CMS Max](https://www.cmsmax.com/)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## Lista de requerimientos
+El software se dividirá en 3 secciones:
+1. Sección pública: accesible para que cualquier persona (no usuario).
+2. Sección de usuario: accesible para personas registradas en el software (usuario).
+3. Sección administrativa: accesible para el usuario administrador del sistema.
+Las funcionalidades en cada sección se describen brevemente a continuación.
+## 1. Sección pública
+- Se permitirá a las personas visualizar los detalles de los productos publicados.
+- Debe existir enlaces que envíen a las personas a un formulario de registro de usuario y a un
+formulario de acceso.
+- Cada producto tendrá un botón “Agregar al carrito”, el cual debe direccionar al formulario de
+registro o acceso de usuario.
+- En caso de olvidar su contraseña, el software debe permitirle a la persona reestablecer su
+contraseña a través del correo electrónico.
+## 2. Sección de usuario
+Una vez que la persona haya ingresado a la sección de usuario mediante el formulario de acceso
+podrá realizar las siguientes operaciones.
+### 2.1. Subsección de compras
+- Visualizar un resumen de todas sus operaciones del usuario desde un panel de inicio.
+- Acceder al listado de productos, cuyo botón de “Agregar al carrito” permita agregarlos al carrito
+de compras.
+- Visualizar el listado de productos del carrito de compras.
+- Confirmar la orden de compra mediante un formulario que permita seleccionar un método de
+pago.
+- Visualizar el historial de órdenes de compra y pagos realizados.
+### 2.2. Subsección de cuenta de usuario
+- Actualizar datos de personales y fotografía
+- Actualizar contraseña.
+- CRUD de métodos de pago.
+## 3. Sección administrativa
+Una vez que la persona haya ingresado a la sección de administración mediante el formulario de
+acceso podrá realizar las siguientes operaciones.
+- Visualizar un resumen de todas las operaciones del sistema desde un panel de inicio.
+- CRUD de categoría de productos.
+- CRUD de productos.
+- Listar las ordenes e historial de pagos por usuario.
+- Listar los usuarios del sistema.
